@@ -11,34 +11,36 @@
      crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
      <link rel="stylesheet" type="text/css" href="estilo.css">
+     <script src="https://kit.fontawesome.com/06d1247b53.js" crossorigin="anonymous"></script>
     <title> Mi Portfolio </title>
 </head>
 <body>
 
 <!-- NAV -->
-    <header class="container">
+    <header class="container ">
             <nav class="navbar fixed-top py-0 navbar-expand-sm navbar-dark bg-dark bg-gradient border-3 border-bottom border-primary" >
-                <div class="container">
-                    <a href="#" class="navbar-brand">Juan Cruz Alcoba </a>
-                    <button type="button" 
+                <a href="#" class="navbar-brand ">Juan Cruz Alcoba </a>
+                <div class="toggle-button">
+                    <button type="button " 
                         class="navbar-toggler"  
                         data-bs-toggle="collapse"
                         data-bs-target="#MenuNavegacion"
                         >
-                            <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                     </button>
                 </div>
     
-                <div id="MenuNavegacion" class="collapse navbar-collapse ">
-                    <ul class="navbar-nav ms-3 ">
-                        <li class="nav-item "><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link " href="#">Educacion</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Habilidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contactame</a></li>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item "><a class="nav-link" href="#"><i class="bi bi-house-fill"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#Educación"><i class="bi bi-book"></i> Educacion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Habilidades"><i class="bi bi-diagram-3-fill"></i> Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contactame"><i class="bi bi-envelope-fill"></i> Contactame</a></li>
                     </ul>
-                    <ul class="navbar-nav ms-3">
-                        <li class="nav-item"><a class="nav-link text-nowrap" href="#">Login</a></li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-nowrap" href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
                     </ul>
+                </div>
             </nav>
     </header>
     </div>
@@ -47,7 +49,7 @@
     
 <!-- Presentación-->
 
-    <div class="container text-light">
+    <div class="container hd text-light">
         <div class="row">
           <div class="col px-0"> 
                 <img src="wp2.jpg" class ="img-fluid" max-width="60%"  alt="">           
@@ -56,16 +58,16 @@
    
     
         <div class="row ">
-          <div class="col">
+          <div class="col-4">
               <div class="profile-container justify-content-center">
-                <img src="fotoperfil1.jpg" class ="profile-img"  alt="">
+                <img src="fotoperfil2.png" class ="profile-img"  alt="">
               </div>
               <div class="profile-text">
                 <h4> Juan Cruz Alcoba</h4>
                 <h7> Diseño web Full Stack Jr.</h7>
               </div>
           </div>  
-          <div class="col"> 
+          <div class="col-8"> 
               <div class="text-container">
                   <div class="item-title d-flex justify-content-between"> 
                       <h2> Sobre mí </h2>
@@ -73,9 +75,8 @@
                         <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                       </div>
                   </div>
-                  <div class="text">  diseñador web Fullstack !!  Lorem ipsum dolor sit amet.
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.!!
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, dolorem!
+                  <div class="text">  Emprendiendo camino en el desarrollo de web/apps actualmente realizando el curso de programador web full-stack de Argentina Programa.  
+                    Estoy buscando mi primer empleo como trainee para poder aplicar todo lo que voy aprendiendo en un entorno de trabajo real. Soy una persona muy curiosa y dedicada, dispuesto a seguirme formando constantemente y dar lo mejor de mí!  
                   </div>
               </div>
           </div>    
@@ -84,7 +85,7 @@
     <hr class="text-light">
 
 <!-- Experiencia -->
-    <section id="Educación" class="container text-light">
+    <section id="Experiencia" class="container text-light">
         
         <div class="row">
             <div class="col">
@@ -98,14 +99,17 @@
 
             <div class="item">
                 <div class="item-title d-flex justify-content-between">
-                    <h6><b> Argentina Programa - #YoProgramo </b> </h6>
+                    <p> Actualmente estoy en busqueda de mi primer trabajo IT por lo cual estoy buscando un puesto Trainee!.
+                        Esta pequeña maqueta estática es muestra de mis primeras andanzas por este hermoso mundo del diseño web! &#128512 así que aquí verán espacios en blanco, botones todavía sin funcionalidad
+                        y formularios que envían mensajes al más allá! &#128540. 
+                        Ahora me encuentro trabajando en darle dinamismo, trasladando toda esta plantilla al framework Angular, donde se llevara esta página a un modelo SPA (Single-page application).
+
+                    </p>
                     <div class="buttons">
                         <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                         <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     </div>
                 </div>
-                <h7> Argentina Programa </h7>
-                <p> <em>feb. 2022 - actualidad </em></p>
             </div>    
         </div>
     </section>        
@@ -120,7 +124,7 @@
                 </div>
 
                 <span class="section-title mb-3 d-flex justify-content-between">
-                    <h3> Licencias y certificaciones </h3>
+                    <h3> Cursos y Certificaciones </h3>
                     <div class="buttons">
                         <button type="button" class="btn btn-dark"><i class="bi bi-plus-circle" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     </div>
@@ -135,7 +139,7 @@
                         </div>
                     </div>
                     <h7> Argentina Programa </h7>
-                    <p> <em>feb. 2022 - actualidad </em></p>
+                    <p> <em>Feb. 2022 - actualidad </em></p>
                 </div>
 
                 <div class="item">
@@ -147,7 +151,19 @@
                         </div>
                     </div>
                     <h7> Mumuki </h7>
-                    <p> <em> dic. 2021 </em></p>
+                    <p> <em> Octubre - Noviembre 2021 </em></p>
+                </div>
+
+                <div class="item">
+                    <div class="item-title d-flex justify-content-between">
+                        <h7><b> Introducción a la Robótica con Arduino - Nivel I  </b></h7>
+                        <div class="buttons">
+                            <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
+                            <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
+                        </div>
+                    </div>
+                    <h7> Universidad Nacional de Río Cuarto </h7>
+                    <p> <em>Diciembre 2021</em></p>
                 </div>
 
                 <div class="item">
@@ -159,7 +175,7 @@
                         </div>
                     </div>
                     <h7> Universidad Nacional de Río Cuarto </h7>
-                    <p> <em>dic. 2021</em></p>
+                    <p> <em>Junio - Agosto 2021</em></p>
                 </div>
 
                 <span class="section-title mb-3 d-flex justify-content-between">
@@ -186,6 +202,7 @@
     </section>
     
     <hr class="text-light">
+    
 
 <!-- habilidades -->
 <section id="Habilidades" class="container text-light">
@@ -197,19 +214,22 @@
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                 </div>
             </div>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quia quae aliquam! Iusto quae non deserunt incidunt reiciendis sint quasi.</p>
+            <p> Actualmente me encuentro cursando una capacitacion para un perfil full-stack Jr, pero por el momento mis habilidades están orientadas hacia el Front-end.
+                Tengo un manejo del ingles suficiente para poder leer, entender, extraer informacion y traducir el material que se me proponga. También estoy familiarizado con algunos softwares de control de versiones como Git y GitHub.
+                En cuanto a mis habilidades blandas puedo destacar que soy muy tenaz y cuando quiero lograr una meta no para hasta conseguirla. 
+            </p>
         </div>
     </div> 
 
-    <div class="container text-light">
-        <div class="row">      
-        <div class="col-md-4  "> 
+    
+    <div class="row">      
+        <div class="col-lg-4 mt-4"> 
             <div class="d-flex justify-content-between">
             <h2>Front End</h2>
             <button type="button" class="btn btn-dark"><i class="bi bi-plus-circle" style="font-size: 1rem; color: #0D6EFD;"></i></button>
             </div>
             <div class="d-flex justify-content-between">
-                <h5> HTML </h5>
+                <h5><i class="fa-brands fa-html5"></i> HTML </h5>
                 <div class="buttons">
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
@@ -218,8 +238,8 @@
             <div class="progress">
                 <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <div class="d-flex justify-content-between">
-                <h5> CSS </h5>
+            <div class="d-flex justify-content-between mt-2">
+                <h5> <i class="fa-brands fa-css3-alt"></i> CSS </h5>
                 <div class="buttons">
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
@@ -228,25 +248,46 @@
             <div class="progress">
                 <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <div class="d-flex justify-content-between">
-                <h5> JavaScript </h5>
+            <div class="d-flex justify-content-between mt-2">
+                <h5><i class="fa-brands fa-js"></i>  JavaScript </h5>
                 <div class="buttons">
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                 </div>
             </div>   
             <div class="progress">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+                <h5><i class="fa-brands fa-angular"></i> Angular </h5>
+                <div class="buttons">
+                    <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
+                    <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
+                </div>
+            </div>   
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         </div>
             
-        </div>
-        <div class="col-md-4  "> 
+        
+        <div class="col-lg-4 mt-4  "> 
             <div class="d-flex justify-content-between">
             <h2>Back End</h2>
             <button type="button" class="btn btn-dark"><i class="bi bi-plus-circle" style="font-size: 1rem; color: #0D6EFD;"></i></button> 
             </div>
             <div class="d-flex justify-content-between">
-                <h5> Java</h5>
+                <h5><i class="fa-brands fa-java"></i> Java/Spring Boot</h5>
+                <div class="buttons">
+                    <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
+                    <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
+                </div>
+            </div>  
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <h5><i class="fa-solid fa-database"></i> MySql</h5>
                 <div class="buttons">
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
@@ -256,13 +297,14 @@
                 <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
         </div>
-        <div class="col-md-4  "> 
+
+        <div class="col-lg-4  mt-4"> 
             <div class="d-flex justify-content-between">
             <h2>Soft Skils</h2>
             <button type="button" class="btn btn-dark"><i class="bi bi-plus-circle" style="font-size: 1rem; color: #0D6EFD;"></i></button> 
             </div>
             <div class="d-flex justify-content-between">
-                <h5>Trabajo en equipo</h5>
+                <h5><i class="fa-solid fa-people-group"></i> Trabajo en equipo</h5>
                 <div class="buttons">
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
@@ -271,8 +313,8 @@
             <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-              <div class="d-flex justify-content-between">
-                <h5>Responsabilidad y compromiso</h5>
+              <div class="d-flex justify-content-between mt-2">
+                <h5><i class="fa-solid fa-dumbbell"></i> Responsabilidad </h5>
                 <div class="buttons">
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
@@ -281,8 +323,8 @@
             <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-              <div class="d-flex justify-content-between">
-                <h5>Empatía</h5>
+              <div class="d-flex justify-content-between mt-2">
+                <h5><i class="fa-solid fa-heart"></i> Empatía</h5>
                 <div class="buttons">
                     <button type="button" class="btn btn-dark"><i class="bi bi-pencil-square" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                     <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
@@ -291,9 +333,9 @@
             <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
+            </div>
         </div>
-        </div>  
-    </div>
+    </div>    
 </section>
     <hr class="text-light">
 
@@ -335,7 +377,7 @@
             </div>
         
             <div class="card bg-dark border" style="width: 20rem;">
-                <img src="proyecto1.png" class="card-img-top" alt="...">
+                <img src="proyecto2.png" class="card-img-top" alt="...">
                 <hr>
                 <div class="card-body">
                   <div class="item-title d-flex justify-content-between">
@@ -345,8 +387,7 @@
                         <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                       </div>
                   </div>
-                  <p class="card-text">Creación de mi propio portfolio web practicando y aplicando conocimientos, 
-                      haciendo uso de HTML,CSS, Bootstrap,JavasScrip</p>
+                  <p class="card-text">Espacio para otro proyecto</p>
                 </div>
                 <div class="card-body">
                   <a href="#" class="card-link">Card link</a>
@@ -359,7 +400,7 @@
 <hr class="text-light">
 
 <!-- Contactame! -->
-    <section class="container text-light">
+    <section id="Contactame" class="container text-light">
         <div class="row">
           <div class="col"> 
               <div class="text-container">
@@ -370,37 +411,38 @@
                         <button type="button" class="btn btn-dark"><i class="bi bi-trash" style="font-size: 1rem; color: #0D6EFD;"></i></button>
                       </div>
                   </div>
-                  <div class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore 
-                      eveniet placeat quidem perspiciatis dolor possimus itaque ducimus cum id quos!
+                  <div class="text"> Podemos ponernos en contacto por este medio!
                   </div>
                     <hr>
                   <div class="row justify-content-center">
                     <div class="col-lg-6 ">
                     <form>
 
-                        <div class="form-group">
+                        <div class="form-group mb-2">
                             <label for="exampleFormControlInput1">Nombre y Apellido</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escriba su nombre completo:">
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group mb-2">
                           <label for="exampleFormControlInput1">Email</label>
                           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group mb-2">
                             <label for="exampleFormControlInput1">Asunto</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Escriba aqui una breve descripción del mensaje">
                         </div>
 
-                          <div class="form-group">
+                        <div class="form-group mb-2">
                             <label for="exampleFormControlTextarea1">Mensaje</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
 
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+
                     </form>
                     </div>  
-                  </div>
+                   </div>
               </div>
           </div>   
         </div>
